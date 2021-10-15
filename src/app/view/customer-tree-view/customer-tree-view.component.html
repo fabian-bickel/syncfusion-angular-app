@@ -1,0 +1,33 @@
+<div id='container' height='100%'>
+    <ejs-splitter #template height='95vh' width='100%'>
+        <e-panes>
+            <e-pane min='20%' size='20%'>
+                <ng-template #content>
+                    <div class="auto-size-content">
+                        <ejs-treeview id='treeelement' #treeelement [fields]='field'
+                            (nodeClicked)='nodeClicked($event)'></ejs-treeview>
+                    </div>
+                </ng-template>
+            </e-pane>
+            <e-pane>
+                <ng-template #content>
+                    <div class="auto-size-content content-pane">
+                        <ng-template [ngIf]="selectedNodeData !== undefined">
+                            <div *ngIf="selectedNodeData['pid'] === '1-1'">
+                                <h3 class="h3">User</h3>
+                                <div><p>ID: {{ selectedNodeData['id'] }}</p></div>
+                                <div><p>Firstname: {{ selectedNodeData['firstName'] }}</p></div>
+                                <div><p>Lastname: {{ selectedNodeData['lastName'] }}</p></div>
+                            </div>
+                            <div *ngIf="selectedNodeData['pid'] === '1-2'">
+                                <h3 class="h3">Sync Group</h3>
+                                <div><p>ID: {{ selectedNodeData['id'] }}</p></div>
+                                <div><p>Name: {{ selectedNodeData['name'] }}</p></div>
+                            </div>
+                        </ng-template>
+                    </div>
+                </ng-template>
+            </e-pane>
+        </e-panes>
+    </ejs-splitter>
+</div>

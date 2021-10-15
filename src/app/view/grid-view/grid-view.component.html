@@ -1,9 +1,9 @@
 <ejs-grid #user [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar'
     [contextMenuItems]='contextMenuItems' allowPaging='true' [pageSettings]='initialPage' [allowExcelExport]='true'
     [allowPdfExport]='true' [allowSorting]='true' [allowGrouping]='true' [showColumnChooser]='true'
-    [enablePersistence]='false' (actionComplete)='actionComplete($event)'>
+    [enablePersistence]='false' (actionComplete)='actionComplete($event)' (actionBegin)='actionBegin($event)'>
     <e-columns>
-        <e-column field='userID' headerText='ID' [visible]='false' isIdentity='true' isPrimaryKey='true'></e-column>
+        <e-column field='id' headerText='ID' isIdentity='true' isPrimaryKey='true'></e-column>
         <e-column field='firstName' headerText='First Name'></e-column>
         <e-column field='lastName' headerText='Last Name'></e-column>
         <e-column field='birthday' headerText='Birthday' type="date" format="dd.MM.yyyy" editType="datepickeredit" [edit]='dpParams'></e-column>

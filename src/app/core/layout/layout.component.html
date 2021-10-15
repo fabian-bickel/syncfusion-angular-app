@@ -1,7 +1,7 @@
 <ejs-sidebar id="default-sidebar" #sidebar [enableGestures]="false" style="visibility: hidden">
     <div class="title"><h1>CNC-Demo App</h1></div>
     <div>
-        <ejs-treeview id="main-treeview" [fields]='field' expandOn='Click'></ejs-treeview>
+        <ejs-treeview id="main-treeview" #navtree [fields]='field' expandOn='Click' (nodeSelected)="loadRoutingContent($event)"></ejs-treeview>
     </div>
 </ejs-sidebar>
 <div>

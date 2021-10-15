@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './core/layout/layout.component';
 import { SidebarModule, TreeViewModule, TabModule} from '@syncfusion/ej2-angular-navigations';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { SplitterModule } from '@syncfusion/ej2-angular-layouts';
 import { GridTreeComponent } from './view/grid-tree/grid-tree.component';
 import { GridViewComponent } from './view/grid-view/grid-view.component';
-import { TreeViewComponent } from './view/tree-view/tree-view.component';
+import { CustomerTreeViewComponent } from './view/customer-tree-view/ customer-tree-view.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { TreeViewComponent } from './view/tree-view/tree-view.component';
     LayoutComponent,
     GridTreeComponent,
     GridViewComponent,
-    TreeViewComponent
+    CustomerTreeViewComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +25,8 @@ import { TreeViewComponent } from './view/tree-view/tree-view.component';
     SidebarModule,
     TreeViewModule,
     TabModule,
-    GridModule
+    GridModule,
+    SplitterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

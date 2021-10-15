@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+import { NodeSelectEventArgs, TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
-import { data } from './datasource';
+import { users, syncGroups } from './datasource';
 
 @Component({
   selector: 'app-layout',
@@ -9,22 +11,41 @@ import { data } from './datasource';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   public data: Object[] = [
     {
-      nodeId: '01',
+      nodeId: '1',
       nodeText: 'Home',
-      selected: true
+      selected: true,
+      url: ''
     },
     {
-      nodeId: '02',
-      nodeText: 'Grid & Tree'
+      nodeId: '2',
+      nodeText: 'Grid & Tree',
+      url: 'gridtree'
     }
   ];
-  public field: Object = { dataSource: this.data, id: 'nodeId', text: 'nodeText', selected: 'selected'};
+  public field: Object = { dataSource: this.data, id: 'nodeId', text: 'nodeText'};
+  @ViewChild('navtree') navtree: TreeViewComponent;
 
   ngOnInit() {
-    if(localStorage.getItem("users") === null) localStorage.setItem("users", JSON.stringify(data));
+    if(localStorage.getItem("users") === null) localStorage.setItem("users", JSON.stringify(users));
+    if(localStorage.getItem("syncGroups") === null) localStorage.setItem("syncGroups", JSON.stringify(syncGroups));
+
   }
+
+  ngAfterViewInit() {
+    switch(window.location.pathname) {
+      case "/gridtree":
+        this.navtree.selectedNodes = ['2'];
+        break;
+    }
+  }
+
+  public loadRoutingContent(args: NodeSelectEventArgs): void {
+    let data: any = this.navtree.getTreeData(args.node);
+    let routerLink: string = data[0].url;
+    this.router.navigate([routerLink]);
+ }
 }

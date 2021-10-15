@@ -1,6 +1,6 @@
-export const data: Object[] = [
+export const users: Object[] = [
 	{
-		userID: 1,
+		id: 1,
 		firstName: "Hayes",
 		lastName: "Lewis",
 		birthday: -124856935000,
@@ -9,7 +9,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 2,
+		id: 2,
 		firstName: "Brianna",
 		lastName: "Rowe",
 		birthday: 43692178000,
@@ -18,7 +18,7 @@ export const data: Object[] = [
 		country: "Switzerland"
 	},
 	{
-		userID: 3,
+		id: 3,
 		firstName: "Tiger",
 		lastName: "Lopez",
 		birthday: -120945213000,
@@ -27,7 +27,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 4,
+		id: 4,
 		firstName: "Jameson",
 		lastName: "George",
 		birthday: 126834504000,
@@ -36,7 +36,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 5,
+		id: 5,
 		firstName: "Ashton",
 		lastName: "Ochoa",
 		birthday: 756397151000,
@@ -45,7 +45,7 @@ export const data: Object[] = [
 		country: "Switzerland"
 	},
 	{
-		userID: 6,
+		id: 6,
 		firstName: "Troy",
 		lastName: "Kirkland",
 		birthday: 148905811000,
@@ -54,7 +54,7 @@ export const data: Object[] = [
 		country: "Austria"
 	},
 	{
-		userID: 7,
+		id: 7,
 		firstName: "Kessie",
 		lastName: "Potts",
 		birthday: 63987757000,
@@ -63,7 +63,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 8,
+		id: 8,
 		firstName: "Savannah",
 		lastName: "Alvarez",
 		birthday: 335397354000,
@@ -72,7 +72,7 @@ export const data: Object[] = [
 		country: "Switzerland"
 	},
 	{
-		userID: 9,
+		id: 9,
 		firstName: "Ashton",
 		lastName: "Petersen",
 		birthday: -159282015000,
@@ -81,7 +81,7 @@ export const data: Object[] = [
 		country: "Switzerland"
 	},
 	{
-		userID: 10,
+		id: 10,
 		firstName: "Gail",
 		lastName: "Shaw",
 		birthday: 468502702000,
@@ -90,7 +90,7 @@ export const data: Object[] = [
 		country: "Austria"
 	},
 	{
-		userID: 11,
+		id: 11,
 		firstName: "Lars",
 		lastName: "Hughes",
 		birthday: -55397320000,
@@ -99,7 +99,7 @@ export const data: Object[] = [
 		country: "Austria"
 	},
 	{
-		userID: 12,
+		id: 12,
 		firstName: "Jasper",
 		lastName: "Fischer",
 		birthday: 774759747000,
@@ -108,7 +108,7 @@ export const data: Object[] = [
 		country: "Switzerland"
 	},
 	{
-		userID: 13,
+		id: 13,
 		firstName: "Alana",
 		lastName: "Madden",
 		birthday: 131837289000,
@@ -117,7 +117,7 @@ export const data: Object[] = [
 		country: "Austria"
 	},
 	{
-		userID: 14,
+		id: 14,
 		firstName: "Abraham",
 		lastName: "Salas",
 		birthday: 872032961000,
@@ -126,7 +126,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 15,
+		id: 15,
 		firstName: "Blaze",
 		lastName: "Bryan",
 		birthday: 574056962000,
@@ -135,7 +135,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 16,
+		id: 16,
 		firstName: "Chase",
 		lastName: "Bauer",
 		birthday: 261982483000,
@@ -144,7 +144,7 @@ export const data: Object[] = [
 		country: "Switzerland"
 	},
 	{
-		userID: 17,
+		id: 17,
 		firstName: "Emerson",
 		lastName: "Mcleod",
 		birthday: -237615498000,
@@ -153,7 +153,7 @@ export const data: Object[] = [
 		country: "Austria"
 	},
 	{
-		userID: 18,
+		id: 18,
 		firstName: "Chloe",
 		lastName: "Savage",
 		birthday: 452643758000,
@@ -162,7 +162,7 @@ export const data: Object[] = [
 		country: "Switzerland"
 	},
 	{
-		userID: 19,
+		id: 19,
 		firstName: "Tasha",
 		lastName: "Larson",
 		birthday: -235825806000,
@@ -171,7 +171,7 @@ export const data: Object[] = [
 		country: "Switzerland"
 	},
 	{
-		userID: 20,
+		id: 20,
 		firstName: "Lee",
 		lastName: "Anderson",
 		birthday: 854209129000,
@@ -180,7 +180,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 21,
+		id: 21,
 		firstName: "Delilah",
 		lastName: "Chang",
 		birthday: 564227187000,
@@ -189,7 +189,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 22,
+		id: 22,
 		firstName: "Joseph",
 		lastName: "Ochoa",
 		birthday: -82753927000,
@@ -198,7 +198,7 @@ export const data: Object[] = [
 		country: "Switzerland"
 	},
 	{
-		userID: 23,
+		id: 23,
 		firstName: "Justin",
 		lastName: "Wiggins",
 		birthday: 651152565000,
@@ -207,7 +207,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 24,
+		id: 24,
 		firstName: "Herman",
 		lastName: "Bowman",
 		birthday: 885671903000,
@@ -216,7 +216,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 25,
+		id: 25,
 		firstName: "Myles",
 		lastName: "Booker",
 		birthday: 425575218000,
@@ -225,7 +225,7 @@ export const data: Object[] = [
 		country: "Austria"
 	},
 	{
-		userID: 26,
+		id: 26,
 		firstName: "Dean",
 		lastName: "Roman",
 		birthday: -124952219000,
@@ -234,7 +234,7 @@ export const data: Object[] = [
 		country: "Switzerland"
 	},
 	{
-		userID: 27,
+		id: 27,
 		firstName: "Carter",
 		lastName: "Randall",
 		birthday: 58857743000,
@@ -243,7 +243,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 28,
+		id: 28,
 		firstName: "Evan",
 		lastName: "Peterson",
 		birthday: 629688864000,
@@ -252,7 +252,7 @@ export const data: Object[] = [
 		country: "Austria"
 	},
 	{
-		userID: 29,
+		id: 29,
 		firstName: "Octavia",
 		lastName: "Mendoza",
 		birthday: 130698471000,
@@ -261,7 +261,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 30,
+		id: 30,
 		firstName: "Salvador",
 		lastName: "Butler",
 		birthday: 456836278000,
@@ -270,7 +270,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 31,
+		id: 31,
 		firstName: "Benedict",
 		lastName: "Donaldson",
 		birthday: 210391956000,
@@ -279,7 +279,7 @@ export const data: Object[] = [
 		country: "Austria"
 	},
 	{
-		userID: 32,
+		id: 32,
 		firstName: "Minerva",
 		lastName: "Rush",
 		birthday: 573553138000,
@@ -288,7 +288,7 @@ export const data: Object[] = [
 		country: "Germany"
 	},
 	{
-		userID: 33,
+		id: 33,
 		firstName: "Chester",
 		lastName: "Carroll",
 		birthday: 931873403000,
@@ -297,7 +297,7 @@ export const data: Object[] = [
 		country: "Switzerland"
 	},
 	{
-		userID: 34,
+		id: 34,
 		firstName: "Kylynn",
 		lastName: "Schwartz",
 		birthday: 868900536000,
@@ -306,3 +306,14 @@ export const data: Object[] = [
 		country: "Germany"
 	}
 ];
+
+export const syncGroups: Object[] = [
+	{
+		id: 1,
+		name: "Lokführer"
+	},
+	{
+		id: 2,
+		name: "Wagenmeister"
+	}
+]

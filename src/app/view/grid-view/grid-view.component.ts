@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommandModel, CommandColumnService, EditSettingsModel, ToolbarItems, ContextMenuItem, ContextMenuService, PageService, EditService, ExcelExportService, GroupService, PdfExportService, SortService, ToolbarService, PageSettingsModel, ColumnChooserService, IEditCell, SaveEventArgs, DeleteEventArgs } from '@syncfusion/ej2-angular-grids';
+import { CommandModel, CommandColumnService, EditSettingsModel, ToolbarItems, ContextMenuItem, ContextMenuService, PageService, EditService, ExcelExportService, GroupService, PdfExportService, SortService, ToolbarService, PageSettingsModel, ColumnChooserService, IEditCell, SaveEventArgs, DeleteEventArgs, AddEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-grid-view',
@@ -32,6 +32,12 @@ export class GridViewComponent implements OnInit {
   actionComplete(args: SaveEventArgs | DeleteEventArgs): void {
     if ((args.requestType === 'delete' || args.requestType === 'save')) {
       localStorage.setItem("users", JSON.stringify(this.data));
+    }
+  }
+
+  actionBegin(args: AddEventArgs): void {
+    if ((args.requestType === 'add')) {
+      args.data['id'] = this.data.length + 1;
     }
   }
 }
